@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>IdCamp</title>
+    <link rel="stylesheet" href="./asset/css/main.css" />
+    <link rel="stylesheet" href="./asset/sass/progress.scss" />
+    <link rel="stylesheet" href="./asset/css/progress.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- NOTE : Navigation Parent -->
+    <div class="backdrop"></div>
+    <header class="main-header">
+      <!-- ANCHOR : Navigation Web -->
+      <button id="side-menu-toggle">Menu</button>
+      <nav class="main-header__nav">
+        <ul class="main-header__item-list">
+          <li class="main-header__item">
+            <a class="" href="index.html">Home</a>
+          </li>
+          <li class="main-header__item">
+            <a class="active" href="#">About</a>
+          </li>
+          <li class="main-header__item">
+            <a class="" href="works.html">Works</a>
+          </li>
+          <li class="main-header__item">
+            <a class="" href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <!-- SECTION : Right Navbar -->
+        <ul class="main-header__item-list">
+          <li class="main-header__item">
+            <a class="" href="/mode">Website</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- ANCHOR : Navigation Mobile -->
+    <nav class="mobile-nav">
+      <ul class="mobile-nav__item-list">
+        <li class="mobile-nav__item">
+          <a class="" href="index.html">Home</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a class="active" href="#">About</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a class="" href="works.html">Works</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a class="" href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- ANCHOR : Body -->
+    <div class="container">
+      <h1 class="centered">About</h1>
+      <img src="asset/image/about.png" alt="" class="imgcentered" />
+      <p class="centered top bottom">
+        Passionate Learning Software Development
+      </p>
+      <hr class="style-two" />
+      <br />
+
+      <ul class="skills-bar-container">
+        <p class="bold centered">LANGUAGE</p>
+        <li>
+          <div class="progressbar-title">
+            <h3>Golang</h3>
+            <span class="percent" id="golang-pourcent"></span>
+          </div>
+          <div class="bar-container">
+            <span
+              class="progressbar progressyelgreen"
+              id="progress-golang"
+            ></span>
+          </div>
+        </li>
+
+        <li>
+          <div class="progressbar-title">
+            <h3>JavaScript</h3>
+            <span class="percent" id="javascript-pourcent"></span>
+          </div>
+          <div class="bar-container">
+            <span
+              class="progressbar progressyellow"
+              id="progress-javascript"
+            ></span>
+          </div>
+        </li>
+
+        <li>
+          <div class="progressbar-title">
+            <h3>PHP</h3>
+            <span class="percent" id="php-pourcent"></span>
+          </div>
+          <div class="bar-container">
+            <span class="progressbar progresspurple" id="progress-php"></span>
+          </div>
+        </li>
+
+        <li>
+          <div class="progressbar-title">
+            <h3>Python</h3>
+            <span class="percent" id="python-pourcent"></span>
+          </div>
+          <div class="bar-container">
+            <span class="progressbar progressblue" id="progress-python"></span>
+          </div>
+        </li>
+        <p class="centered top2 bottom">FRAMEWORK & DBMS</p>
+        <li>
+          <div class="progressbar-title">
+            <h3>Express</h3>
+            <span class="percent" id="express-pourcent"></span>
+          </div>
+          <div class="bar-container">
+            <span
+              class="progressbar progresswhite"
+              id="progress-express"
+            ></span>
+          </div>
+        </li>
+        <li>
+          <div class="progressbar-title">
+            <h3>Laravel</h3>
+            <span class="percent" id="laravel-pourcent"></span>
+          </div>
+          <div class="bar-container">
+            <span class="progressbar progressred" id="progress-laravel"></span>
+          </div>
+        </li>
+        <li>
+          <div class="progressbar-title">
+            <h3>Flask</h3>
+            <span class="percent" id="flask-pourcent"></span>
+          </div>
+          <div class="bar-container">
+            <span class="progressbar progresspink" id="progress-flask"></span>
+          </div>
+        </li>
+        <li>
+          <div class="progressbar-title">
+            <h3>Bootstrap & Bulma</h3>
+            <span class="percent" id="bootstrap-pourcent"></span>
+          </div>
+          <div class="bar-container">
+            <span
+              class="progressbar progresspurple"
+              id="progress-bootstrap"
+            ></span>
+          </div>
+        </li>
+        <li>
+          <div class="progressbar-title">
+            <h3>React & Vue</h3>
+            <span class="percent" id="react-pourcent"></span>
+          </div>
+          <div class="bar-container">
+            <span class="progressbar progressblue" id="progress-react"></span>
+          </div>
+        </li>
+        <li>
+          <div class="progressbar-title">
+            <h3>SQL (MySQL & Postgree & SQLServer)</h3>
+            <span class="percent" id="sql-pourcent"></span>
+          </div>
+          <div class="bar-container">
+            <span class="progressbar progressyellow" id="progress-sql"></span>
+          </div>
+        </li>
+        <li>
+          <div class="progressbar-title">
+            <h3>NOSQL (MongoDB)</h3>
+            <span class="percent" id="nosql-pourcent"></span>
+          </div>
+          <div class="bar-container">
+            <span class="progressbar progressgreen" id="progress-nosql"></span>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- SECTION: Javascript -->
+    <script src="./asset/js/main.js"></script>
+    <script src="./asset//js/progress.js"></script>
+  </body>
+</html>
